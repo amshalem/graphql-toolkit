@@ -32,7 +32,7 @@ export interface LoadTypedefsOptions {
 }
 
 export async function loadTypedefs<AdditionalConfig = any>(pointToSchema: string | string[], options: LoadTypedefsOptions & Partial<AdditionalConfig> = {}, filterKinds: null | string[] = [], cwd = process.cwd()): Promise<DocumentFile[]> {
-  const globby: any = await import('globby');
+  const globby = (await import('globby')) as any as typeof import('globby');
   const typesPaths: string[] = normalizeSchemaString(pointToSchema);
   let found: DocumentFile[] = [];
   let foundGlobs: string[] = [];
