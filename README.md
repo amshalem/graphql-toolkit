@@ -1,4 +1,4 @@
-# graphql-toolkit
+[![toolkit](https://user-images.githubusercontent.com/25294569/64730367-dc4bcd80-d4e7-11e9-9c2f-2bf7a9fec855.gif)](https://github.com/ardatan/graphql-toolkit)
 
 A set of utils for faster development of GraphQL tools. Use these utils if you are creating a tool that loads schema/documents, merges schemas, scan for schema/documents/resolvers files.
 
